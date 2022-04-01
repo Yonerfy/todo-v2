@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap");
+
+html {
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  gap: 0.5em;
+  width: 500px;
+  margin: 2em auto 0;
+  row-gap: 2em;
+}
+h1 {
+  grid-column: 1 / -1;
+  font-size: 3rem;
+  font-weight: 300;
+  color: rgb(55, 55, 55);
+}
+
+img {
+  width: 100%;
+}
+button.delete-i {
+  cursor: pointer;
+  width: 30px;
+  height: 20px;
+  background-image: url("./img/delete-red.png");
+  background-size: cover;
+  background-position: center center;
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-color: white;
+  border: transparent;
+}
+.btn-add {
+  justify-self: start;
+  padding: 0.3em 0.6em;
+  background-color: #0856bd;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  font-size: 1rem;
+}
+
+.my-imput {
+  padding: 0.3em 0.6em;
+  border: 1px solid #6c757d;
+  border-radius: 2px;
+}
+.my-imput::placeholder {
+  color: #6c757d;
+}
+
+.task-complete {
+  text-decoration: line-through #fa0a0a;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  outline-color: #0856bd;
+}
+
+li input {
+  border: none;
+  font-size: 0.9rem;
+  padding: 0.3em 0.6em;
+  color: rgb(44, 43, 43);
+}
